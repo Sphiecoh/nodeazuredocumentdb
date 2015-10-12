@@ -102,8 +102,13 @@ exports.findById = function(req,res)
 {
     readOrCreateDatabase(function (params) {
         readOrCreateCollection(params, function(collection){
-            getItem(collection,req.params.id,function(item){
+            getItem(collection,req.params.id,function(err,item){
+                if(err){
+                    throw(err);
+                }
+                else{
                 res.json(item);
+                }
             })
         })
     })
