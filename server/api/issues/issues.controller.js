@@ -106,6 +106,9 @@ exports.findById = function(req,res)
                 if(err){
                     throw(err);
                 }
+                else if(!item){
+                    res.status(404).send('Item not found');
+                }
                 else{
                 res.json(item);
                 }
