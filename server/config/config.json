@@ -1,0 +1,6 @@
+ {
+	"HOST"       : "https://webhooks.documents.azure.com:443/",
+    "AUTH_KEY"   : "ExpHB/6djvtReNR1+2dsvdhx/40QLEVuybRrZc5/XDcmNEXnei81hnIerYYoeEkFtkEijpDb6LlxZNW1Civrig==",
+    "DATABASE"   : "Bitbucket",
+    "COLLECTION" : "Issues"
+}
